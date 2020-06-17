@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-primary{
+    color: #3920c9;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(40, 8, 61, 0.993),rgba(8, 21, 61, 0.993));
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #250ea8;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none; 
+}
+
+#navbar h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+}
+
+#navbar li a:hover{
+    background-color: #3920c9;
+}
+
+#homepage{
+    background: url(../images/sun2.jpg) no-repeat center center/cover;
+    height: 86.5vh;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.home-content h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home-content .btn{
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+    
+}
+
+.home-content .btn:hover{
+    background: linear-gradient(to bottom right, rgb(129, 11, 94),rgb(66, 8, 119));
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+    
+}
+/*
+.home-content .btn:hover:after{
+    content: attr(hover-text);
+}*/
+.btns{
+    position: relative;
+}
+.btn{
+    color: #2100da;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #1e089b;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* About Section*/
+#about{
+    padding: 5rem 0;
+    background: linear-gradient(to bottom right,rgba(40, 8, 61),rgba(8, 21, 61));
+}
+
+#about h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: rgb(245, 241, 241);
+
+}
+
+#about p.lead{
+    margin-bottom: 1rem;
+}
+
+#about .about-content{
+    display: flex;
+}
+
+#about .about-image,
+#about .about-text{
+    flex: 1;
+}
+
+#about .about-text{
+    text-align: justify;
+    color: rgb(245, 241, 241);
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    
+}
+
+#about .about-text::after {
+    content: "";
+    background: url(../images/number-hole.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+/*
+#about .about-image img{
+    display: block;
+    margin-left: 70px;
+    width: 75%;
+    border-radius: 40%;
+    margin-top: -5px;
+}*/
+
+#bot-margin{
+    margin-bottom: 5rem;
+}
+
+.kard{
+    background: linear-gradient(to bottom right,rgb(167, 134, 189),rgb(69, 89, 150));
+    height: 400px;
+    width: 310px;
+    position: relative;
+    
+    
+    border-radius:20px;
+    box-shadow:0 0 20px 10px rgba(150, 5, 90, 0.4);
+    
+    margin-left: 100px;
+    margin-right: 150px;
+    
+    
+    margin-top: -30px;
+}
+.info{
+    height: 100%;
+    widows: 100%;
+    display: flex;
+    justify-content: center;
+}
+.name{
+    font-size:35px;
+    font-family: "Raleway",sans-serif;
+    color:#f79f08;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 600;
+    top:100px;
+}
+.prof{
+    font-size: 20px;
+    position: absolute;
+    top:145px;
+    font-family:'Josefin Sans';
+    color: #2711a1;
+}
+.divider{
+    background-color: #949594;
+    height:1.5px;
+    width: 50px;
+    position: absolute;
+    top:190px;
+}
+
+.location{
+    position:absolute;
+    top:210px;
+    color:#495949;
+    text-align: center;
+    font-size:18px;
+    font-family:"Work Sans",sans-serif;
+    line-height:28px;
+}
+button{
+    position: absolute;
+    bottom: 20px;
+    background: linear-gradient(to bottom right,rgb(41, 71, 243),rgb(20, 130, 204));
+    border: none;
+    font-size: 20px;
+    padding: 8px 10px;
+    color: white;
+    font-family:"Work Sans", sans-serif;
+    border-radius: 8px;
+}
+button:hover{
+    color:blue;
+    background: linear-gradient(to bottom right,rgb(101, 120, 230),rgb(64, 157, 219));
+}
+#about a{
+    color:white;
+}
+
+
+.photo{
+    height:100%;
+    width:100%;
+    background:url(..//images/ME.jpg);
+    position: absolute;
+    bottom:0;
+    /*background-size: 100% 100%;
+    border-radius: 20px;
+    color: rgb(20, 67, 223);*/
+    font-size: 20px;
+    text-align: end;
+
+    transform: scale(0.35,0.25) translateY(-710px);
+    background-size: 100% 110%;
+    background-position: 0 -25px;
+    color: white;
+    border-radius: 40%;
+   
+    
+}
+
+.kard:hover .photo{
+    transform: scale(0.35,0.25) translateY(-710px);
+    background-size: 100% 100%;
+    background-position:  -5px;
+    color: white;
+    border-radius: 40%;
+    background:url(../images/spongebob.jpeg);
+}
+.glowing{
+    /*color:rgb(223, 24, 133);
+    font-family:sans-serif;
+    margin:0;*/
+   
+    text-shadow:0 -1px 2px #fff,
+    0 -3px 6px rgba(255,200,200,1),
+    0 -6px 12px rgba(255,150,150,1),
+    0 -10px 20px rgba(255,100,100,1),
+    0 -15px 30px rgba(255,50,50,1),
+    0 -21px 42px rgba(255,0,0,1);
+
+    animation:fire 1s ease infinite,
+    colorSpin 10s linear infinite;
+}
+
+
+@keyframes fire{
+    50%{
+        text-shadow:0 -4px 8px #fff,
+    0 -12px 24px rgba(255,200,200,1),
+    0 -24px 48px rgba(255,150,150,1),
+    0 -40px 80px rgba(255,100,100,1),
+    0 -60px 120px rgba(255,50,50,1),
+    0 -84px 168px rgba(255,0,0,1);
+    }
+}
+@keyframes colorSpin{
+    to{filter:hue-rotate(360deg)}
+}
+
+.kard img{
+    position: relative;
+    
+}
+#img1{
+    height: 45%;
+    width:  55%;
+    top: 200px;
+    left: 10px;
+}
+#img2{
+    height: 20%;
+    width:  35%;
+    top: 150px; 
+    left: -22px;
+}
+#logo-p1{
+    position: relative;
+    top: 75px;
+    left: 218px;
+    font-size: 20px;
+    color: blue;
+    font-family: 'Pacifico';
+    text-shadow: 5px 2px 5px rgb(217, 255, 0);
+}
+#logo-p2{
+    position: relative;
+    top: 85px;
+    left: 238px;
+    font-size: 20px;
+    color: rgb(143, 167, 9);    
+    font-family: 'Pacifico';
+    text-shadow: 5px 2px 5px rgb(15, 32, 182);
+}
+
+/*Courses Section*/
+#courses{
+    background: linear-gradient(to bottom right, rgba(8, 21, 61),rgba(132, 99, 153));
+}
+#all-cards{
+    margin-left:7rem;
+}
+#courses a{
+    color: rgb(40, 128, 228);
+    text-align: end;
+    font-family: serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+#courses a:hover{
+    color: rgb(9, 198, 231);
+}
+.middle{
+    position: relative;
+    
+   
+    /*display: inline-flex;
+    top: 50%;
+    left:9%;
+    transform: translate(-50%,-50%);*/
+  
+}
+
+.card{
+    cursor: pointer;
+    width: 230px;
+    height: 290px;
+    border-radius: 3rem 3rem;
+    
+}
+.card-front, .card-back{
+   
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    border-radius: 3rem 3rem;
+    
+    background: linear-gradient(to bottom right,rgba(100, 2, 146, 0.993),rgba(51, 8, 206, 0.993));
+}
+.card-front img{
+    height: 100%;
+    overflow: hidden;
+}
+.card-front{
+    transform: perspective(600px) rotateY(0deg);
+    text-align: center;
+    color: white;
+   
+}
+.card-back{
+    background: linear-gradient(to bottom right,rgba(7, 10, 197, 0.993),rgba(66, 2, 82, 0.993));
+    transform: perspective(600px) rotateY(180deg);
+   
+}
+.back-content{
+    color: #d3dae2;
+    text-align: center;
+    width: 100%;
+}
+#courses h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 5rem;
+    color: rgba(142, 245, 245);
+
+}
+.card:hover > .card-front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .card-back{
+    transform: perspective(600px) rotateY(0deg)
+}
+.last-row-positioning{
+    margin-left: 22rem;
+}
